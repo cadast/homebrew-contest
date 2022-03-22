@@ -9,16 +9,16 @@ class Contest < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "git@github.com:cadast/contest/releases/download/v1.0.0/contest_1.0.0_macOS_arm64.tar.gz", :using => GitDownloadStrategy
-      sha256 "24ee3075eb0e8dd42169db80c5a27d8b0bfb3c79ba39afeb821f3e2b51a5cef9"
+      url "https://github.com/cadast/contest/releases/download/v1.0.0/contest_1.0.0_macOS_arm64.tar.gz"
+      sha256 "15cc729738ae3e88e1c2887c22a26fc144ea07a06adb78e18aa26e850973c679"
 
       def install
         bin.install "contest"
       end
     end
     if Hardware::CPU.intel?
-      url "git@github.com:cadast/contest/releases/download/v1.0.0/contest_1.0.0_macOS_x86_64.tar.gz", :using => GitDownloadStrategy
-      sha256 "4d3028d21683c45409027bf4e6de7ea5d2f1124a6ec833cbbe6a801f9c18c1e3"
+      url "https://github.com/cadast/contest/releases/download/v1.0.0/contest_1.0.0_macOS_x86_64.tar.gz"
+      sha256 "6142265b888a513241ee1b251fc3673cc63d58e046578df785475eefc1a11085"
 
       def install
         bin.install "contest"
@@ -28,16 +28,16 @@ class Contest < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "git@github.com:cadast/contest/releases/download/v1.0.0/contest_1.0.0_linux_arm64.tar.gz", :using => GitDownloadStrategy
-      sha256 "9ee1c8de4101f4c22bff47f696e1bdcba53cd37649916ae0d8932349b7992fcb"
+      url "https://github.com/cadast/contest/releases/download/v1.0.0/contest_1.0.0_linux_arm64.tar.gz"
+      sha256 "c4defe48c55c87118229d32e85d669da67b6b994d8da09f9dc5bb72a03b70208"
 
       def install
         bin.install "contest"
       end
     end
     if Hardware::CPU.intel?
-      url "git@github.com:cadast/contest/releases/download/v1.0.0/contest_1.0.0_linux_x86_64.tar.gz", :using => GitDownloadStrategy
-      sha256 "bd68c391ac3b395d61b3357784388d99d1837328403bc3a114ebe3dcea533636"
+      url "https://github.com/cadast/contest/releases/download/v1.0.0/contest_1.0.0_linux_x86_64.tar.gz"
+      sha256 "6a9d06db5a42e2adaac4d7a1ee58d0f2c7cd0362e10193680a36e5e47f947b74"
 
       def install
         bin.install "contest"
