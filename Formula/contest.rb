@@ -5,20 +5,20 @@
 class Contest < Formula
   desc "A simple tool for contract testing web APIs"
   homepage "https://www.github.com/cadast/contest"
-  version "1.2.0"
+  version "1.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cadast/contest/releases/download/v1.2.0/contest_1.2.0_macOS_arm64.tar.gz"
-      sha256 "36ad8e98897b020f52ffdb84260aee94df24ecda3faca3ae308f241ace9ec01b"
+      url "https://github.com/cadast/contest/releases/download/v1.3.0/contest_1.3.0_macOS_arm64.tar.gz"
+      sha256 "aa9afb942a53132dc1d29b63a389c99fc05b498fc30b1b0095d9bccaf1073971"
 
       def install
         bin.install "contest"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/cadast/contest/releases/download/v1.2.0/contest_1.2.0_macOS_x86_64.tar.gz"
-      sha256 "d4bde26d96f68d9da3f0d4ed5c55913a57fb697748940973f4f80abdf538251e"
+      url "https://github.com/cadast/contest/releases/download/v1.3.0/contest_1.3.0_macOS_x86_64.tar.gz"
+      sha256 "9b1ccd04d934453c08a96866cc88ff5e7bcd4b85539ba334a5c7bf671580c3c8"
 
       def install
         bin.install "contest"
@@ -28,16 +28,16 @@ class Contest < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/cadast/contest/releases/download/v1.2.0/contest_1.2.0_linux_x86_64.tar.gz"
-      sha256 "c51ee99f0a03a282e3e96e30216676a0924c7b2b19916e88700ab6a4c7dcd667"
+      url "https://github.com/cadast/contest/releases/download/v1.3.0/contest_1.3.0_linux_x86_64.tar.gz"
+      sha256 "28058961b44f0325ee714be5d41dd57e6ec58526db205e705a6480cf109d7d16"
 
       def install
         bin.install "contest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/cadast/contest/releases/download/v1.2.0/contest_1.2.0_linux_arm64.tar.gz"
-      sha256 "48187c0e9b4bf8515fb96b5c9c8fe8cce1e4ace1664b51ba88d0c33f968d20d3"
+      url "https://github.com/cadast/contest/releases/download/v1.3.0/contest_1.3.0_linux_arm64.tar.gz"
+      sha256 "c8b8f8ab710b76b96273757ea5ee49ab629bc12b8f0f61f888221637a27e4cc4"
 
       def install
         bin.install "contest"
