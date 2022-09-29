@@ -1,9 +1,9 @@
 class Windows < Formula
   desc "A simple tool for storing window configurations on macOS"
   homepage "https://www.github.com/lowski/windows"
-  url "https://github.com/lowski/windows/releases/download/v1.1.1/windows_1.1.1_universal.tar.gz"
-  version "1.1.1"
-  sha256 "25d4106d4ab6db9f8d31ac5847feb2c8e1e865ba882d55cb2f2ed8bd456b2649"
+  url "https://github.com/lowski/windows/releases/download/v1.1.2/windows_1.1.2_universal.tar.gz"
+  version "1.1.2"
+  sha256 "3b3032e0d0222ba7caa7c3013cfac53a61fadfc7f0739da1509e912666fc5a45"
 
   def install
     bin.install "windows"
