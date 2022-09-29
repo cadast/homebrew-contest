@@ -6,7 +6,7 @@ class Windows < Formula
   sha256 "3b3032e0d0222ba7caa7c3013cfac53a61fadfc7f0739da1509e912666fc5a45"
 
   def install
-    bin.install "windows"
-    bin.install "windows.momd"
+    libexec.install Dir["*"]
+    bin.write_exec_script libexec/"windows"
   end
 end
