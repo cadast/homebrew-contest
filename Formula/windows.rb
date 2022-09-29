@@ -7,5 +7,6 @@ class Windows < Formula
 
   def install
     bin.install "windows"
+    bin.install "windows.momd"
   end
 end
